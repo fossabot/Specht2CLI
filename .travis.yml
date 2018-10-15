@@ -12,7 +12,7 @@ matrix:
 
 install:
   - |
-    pip install --user urllib3[secure] pipenv;
+    pip install --user urllib3[secure] pipenv conan;
     export PATH=`python -m site --user-base`/bin:${PATH}
     pipenv install --deploy 
     if [[ "${TRAVIS_OS_NAME}" == "linux" ]]; then
