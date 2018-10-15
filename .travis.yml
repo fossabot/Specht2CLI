@@ -31,6 +31,6 @@ before_script:
 
 script:
   - mkdir build && cd build
-  - conan install .. -s cppstd=14 --build
+  - pipenv run conan install .. -s cppstd=14 --build
   - cmake ..
   - cmake --build
