@@ -9,7 +9,7 @@ platform:
 
 install:
   # Python 3
-  - set PATH=C:\Python34-x64;C:\Python34-x64\Scripts;%PATH%
+  - set PATH=C:\Python37-x64;C:\Python37-x64\Scripts;%PATH%
 
   - pip install pipenv
   - pipenv install --deploy
