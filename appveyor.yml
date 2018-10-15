@@ -21,7 +21,7 @@ before_build:
   - pipenv run conan install . -u -s cppstd=14 --build=missing
 
 build_script:
-  - cmake ..
+  - cmake .
   - cmake --build . --config release
 
 cache:
