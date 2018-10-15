@@ -1,0 +1,5 @@
+[requires]
+libnekit/0.0.1@zhuhaow/testing
+
+[generators]
+cmake
