@@ -9,6 +9,16 @@ matrix:
       language: objective-c
     - os: linux
       language: cpp
+      compiler: gcc-8
+      env:
+        - C_COMPILER=gcc-8
+        - CXX_COMPILER=g++-8
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-8
 
 install:
   - |
