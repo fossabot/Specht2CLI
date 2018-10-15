@@ -4,10 +4,11 @@ cache:
     - '$HOME/.pyenv'
 
 matrix:
-  - os: osx
-    language: objective-c
-  - os: linux
-    language: cpp
+  include:
+    - os: osx
+      language: objective-c
+    - os: linux
+      language: cpp
 
 install:
   - |
